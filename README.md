@@ -11,4 +11,4 @@ git clone https://github.com/Oluwaseun241/configfiles.git
 ```
 cd configfiles
 ```
-copy the files to your .config/nvim folder
+Copy the files to your .config/nvim folder
