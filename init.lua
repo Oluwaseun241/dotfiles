@@ -1,4 +1,5 @@
 require("oluwaseun.plugins-setup")
+-- require("oluwaseun.plugins.dashboard")
 require("oluwaseun.core.options")
 require("oluwaseun.core.keymaps")
 require("oluwaseun.core.colorscheme")
