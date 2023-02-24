@@ -43,6 +43,9 @@ return packer.startup(function(use)
 
   use("morhetz/gruvbox")
 
+  --Toggle term
+  use("akinsho/toggleterm.nvim")
+
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
   use("szw/vim-maximizer") -- maximizes and restores current window
