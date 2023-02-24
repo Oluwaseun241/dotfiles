@@ -1,7 +1,7 @@
 -- set colorscheme to nightfly with protected call
 -- in case it isn't installed
 local status, _ = pcall(vim.cmd,
-"colorscheme kanagawa"
+"colorscheme gruvbox"
 --[[ "colorscheme nightfly" ]] 
 )
 if not status then
