@@ -39,7 +39,7 @@ return packer.startup(function(use)
 
 --[[   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme ]]
 
-  use("rebelot/kanagawa.nvim")
+--[[   use("rebelot/kanagawa.nvim") ]]
 
   use("morhetz/gruvbox")
 
