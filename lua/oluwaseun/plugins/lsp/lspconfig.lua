@@ -56,56 +56,8 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- configure html server
-lspconfig["html"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure typescript server with plugin
-typescript.setup({
-	server = {
-		capabilities = capabilities,
-		on_attach = on_attach,
-	},
-})
-
--- configure css server
-lspconfig["cssls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
-
--- configure emmet language server
-lspconfig["emmet_ls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-	filetypes = { "html", "typescriptreact", "javascriptreact", "python", "css", "sass", "scss", "less", "go" },
-})
-
--- configure lua server (with special settings)
--- lspconfig["sumneko_lua"].setup({
---   capabilities = capabilities,
---   on_attach = on_attach,
---   settings = { -- custom settings for lua
---     Lua = {
---       -- make the language server recognize "vim" global
---       diagnostics = {
---         globals = { "vim" },
---       },
---       workspace = {
---         -- make language server aware of runtime files
---         library = {
---           [vim.fn.expand("$VIMRUNTIME/lua")] = true,
---           [vim.fn.stdpath("config") .. "/lua"] = true,
---         },
---       },
---     },
---   },
--- })
