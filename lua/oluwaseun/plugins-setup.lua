@@ -34,8 +34,9 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	-- colorscheme
-	--use("morhetz/gruvbox")
+	use("morhetz/gruvbox")
 	use("catppuccin/nvim")
+	use("rose-pine/neovim")
 
 	--Toggle term
 	use("akinsho/toggleterm.nvim")
