@@ -31,16 +31,11 @@ return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	--Screnshoot
-	use("SergioRibera/vim-screenshot")
-
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	--[[   use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme ]]
-
-	--[[   use("rebelot/kanagawa.nvim") ]]
-
-	use("morhetz/gruvbox")
+	-- colorscheme
+	--use("morhetz/gruvbox")
+	use("catppuccin/nvim")
 
 	--Toggle term
 	use("akinsho/toggleterm.nvim")
