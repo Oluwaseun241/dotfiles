@@ -71,6 +71,17 @@ return packer.startup(function(use)
 	-- Go plugin
 	use("ray-x/go.nvim")
 
+	-- Code snippet
+	use({
+		"TobinPalmer/rayso.nvim",
+		cmd = { "Rayso" },
+		config = function()
+			require("rayso").setup({
+				open_cmd = "google-chrome",
+			})
+		end,
+	})
+
 	-- configuring lsp servers
 	use({
 		"VonHeikemen/lsp-zero.nvim",
