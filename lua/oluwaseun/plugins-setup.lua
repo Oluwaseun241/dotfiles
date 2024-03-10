@@ -82,6 +82,19 @@ return packer.startup(function(use)
 		end,
 	})
 
+	use({
+		"mistricky/codesnap.nvim",
+		run = "make",
+		cmd = "CodeSnapPreviewOn",
+		config = function()
+			require("codesnap").setup({
+				mac_window_bar = true,
+				opacity = true,
+				watermark = "Oluwaseun",
+			})
+		end,
+	})
+
 	-- configuring lsp servers
 	use({
 		"VonHeikemen/lsp-zero.nvim",
