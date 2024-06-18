@@ -31,6 +31,9 @@ return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
+	-- Trouble
+	use({ "folke/trouble.nvim", opts = {}, cmd = "Trouble" })
+
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	-- colorscheme
