@@ -82,23 +82,14 @@ return packer.startup(function(use)
 		config = function()
 			require("rayso").setup({
 				open_cmd = "google-chrome",
+				options = {
+					title = "Oluwaseun",
+				},
 			})
 		end,
 	})
 
-	-- use({
-	-- 	"mistricky/codesnap.nvim",
-	-- 	run = "make",
-	-- 	--cmd = "CodeSnapPreviewOn",
-	-- 	--branch = "v0.0.11",
-	-- 	config = function()
-	-- 		require("codesnap").setup({
-	-- 			mac_window_bar = true,
-	-- 			opacity = true,
-	-- 			watermark = "Oluwaseun",
-	-- 		})
-	-- 	end,
-	-- })
+	--use({ "mistricky/codesnap.nvim", run = "make" })
 
 	-- configuring lsp servers
 	use({
