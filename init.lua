@@ -16,6 +16,6 @@ require("oluwaseun.plugins.autopairs")
 require("oluwaseun.plugins.treesitter")
 require("oluwaseun.plugins.gitsigns")
 require("oluwaseun.plugins.go")
---require("oluwaseun.plugins.codesnap")
+require("oluwaseun.plugins.codesnap")
 --testing
 --require("sooner").setup()
