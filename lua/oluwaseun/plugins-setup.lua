@@ -88,7 +88,7 @@ return packer.startup(function(use)
 			})
 		end,
 	})
-
+	-- CodeSnap
 	use({ "mistricky/codesnap.nvim", run = "make" })
 
 	-- configuring lsp servers
