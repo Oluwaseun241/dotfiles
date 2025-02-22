@@ -91,6 +91,11 @@ return packer.startup(function(use)
 	-- CodeSnap
 	use({ "mistricky/codesnap.nvim", run = "make" })
 
+	-- debugger (dap)
+	use({ "mfussenegger/nvim-dap", requires = { "leoluz/nvim-dap-go", "rcarriga/nvim-dap-ui" } })
+
+	use({ "nvim-neotest/nvim-nio" })
+
 	-- configuring lsp servers
 	use({
 		"VonHeikemen/lsp-zero.nvim",

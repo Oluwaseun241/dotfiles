@@ -49,6 +49,13 @@ keymap.set("n", "<leader>/", ":ToggleTerm<CR>") -- toggle terminal
 keymap.set("n", "<leader>gat", "<cmd>GoAddTag<cr>")
 keymap.set("n", "<leader>grt", "<cmd>GoRmTag<cr>")
 
+-- Degubber
+keymap.set("n", "<leader>dt", "<cmd>DapToggleBreakpoint<cr>") -- Toggle debugger breakpoint
+keymap.set("n", "<leader>dc", "<cmd>DapContinue<cr>") -- Continue running debugger
+keymap.set("n", "<leader>dx", "<cmd>DapTerminate<cr>") -- Kill Debugger
+keymap.set("n", "<leader>ds", "<cmd>DapStepOver<cr>") -- Step over Debugger
+keymap.set("n", "<leader>du", "<cmd>DapToggleRepl<cr>") -- open Debugger Repl
+
 -- Code snap
 keymap.set("n", "<leader>cs", "<cmd>CodeSnap<cr>")
 
