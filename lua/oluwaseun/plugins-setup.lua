@@ -75,6 +75,15 @@ return packer.startup(function(use)
 	-- Go plugin
 	use("ray-x/go.nvim")
 
+	-- Flutter
+	use({
+		"nvim-flutter/flutter-tools.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		},
+	})
+
 	-- Code snippet
 	use({
 		"TobinPalmer/rayso.nvim",
