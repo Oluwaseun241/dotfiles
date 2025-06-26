@@ -54,7 +54,7 @@ return packer.startup(function(use)
 	use("wakatime/vim-wakatime")
 
 	--sooner(test)
-	use("/home/oluwaseun/personal/sooner.nvim")
+	--use("/home/oluwaseun/personal/sooner.nvim")
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
